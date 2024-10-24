@@ -170,7 +170,7 @@ section {
     /*hace que se convierta en círculo*/
 }
 
-footer {
+.footer {
     width: 100%;
     height: 5rem;
     background-color: #000;
