@@ -1,0 +1,328 @@
+/*Importación de Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap');
+
+
+
+/*reseteo de algunos parámetros prestablecidos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Estilo aplicado a todo el cuerpo*/
+
+
+/*Estilos para texto*/
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #DCDCDC;
+  }
+
+h2 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #DCDCDC;
+    padding: 2rem 0; /*Aplica padding solo arriba y abajo*/
+}
+
+h3 {
+    font-family: "Orbitron", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #DCDCDC;
+    padding: 1rem 0; /*Aplica padding solo arriba y abajo*/
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #DCDCDC;
+}
+
+.p-blue {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: rgb(91, 134, 255);
+}
+
+/*Contenedores*/
+body {
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+header {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.container__color-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.container__color {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex: 1 1 12rem;
+    padding-bottom: 0.5rem;
+}
+
+.borde-violeta {
+    border: 1px solid purple;
+}
+
+.borde-rojo {
+    border: 1px solid red;
+}
+
+.borde-amarillo {
+    border: 1px solid yellow;
+}
+
+.caja__color {
+    width: 100%;
+    min-height: 24px;
+}
+
+.violeta {
+    background-color: rgba(128,0,128,1);
+}
+
+.rojo {
+    background-color: rgba(255,0,0,1);
+}
+
+.amarillo {
+    background-color: rgba(255,255,0,1);
+}
+
+.caja__color-texto {
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.cont__bg {
+    width: 100%;
+    margin: 1.5rem 0; /*solo aplica margen superior e inferior*/
+    height: 12.5rem;
+}
+
+.container__ejemplo {
+    width: 100%;
+    margin: 0.75rem 0; /*solo aplica margen superior e inferior*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ejemplo {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem;
+    flex: 1 1 12.5rem;
+}
+
+.cont__bg-ejemplo {
+    width: 100%;
+    height: 12.5rem;
+}
+
+.cont__bg-conico {
+    margin: 1.5rem 0; /*solo aplica margen superior e inferior*/
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%; /*hace que se convierta en círculo*/
+}
+
+/*DEGRADADO LINEAL*/
+/*Direcciones del degradado lineal*/
+/*Fondo degradado lineal de izquierda a derecha*/
+.lineal-izquierda {
+    background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo degradado lineal de derecha a izquierda*/
+.lineal-derecha {
+    background: linear-gradient(270deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo degradado lineal de arriba hacia abajo*/
+.lineal-arriba {
+    background: linear-gradient(180deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo degradado lineal de abajo hacia arriba*/
+.lineal-abajo {
+    background: linear-gradient(0deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Degradados en diagonal*/
+/*Fondo Degradado lineal desde la esquina inferior izquierda*/
+.lineal-inf-izquierda {
+    background: linear-gradient(45deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo Degradado lineal desde la esquina superior izquierda */
+.lineal-sup-izquierda {
+    background: linear-gradient(135deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Degradado lineal desde la esquina superior derecha*/
+.lineal-sup-derecha {
+    background: linear-gradient(225deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo Degradado lineal desde la esquina inferior derecha*/
+.lineal-inf-derecha {
+    background: linear-gradient(315deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo Degradado lineal que se repite con porcentaje pequeño*/
+.lineal-repeticion1 {
+    background: repeating-linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 2.5%, rgba(255,255,0,1) 5%);
+}
+
+/*Fondo Degradado lineal que se repite con porcentaje mayor*/
+.lineal-repeticion2 {
+    background: repeating-linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 25%, rgba(255,255,0,1) 50%);
+}
+
+/*DEGRADADO RADIAL*/
+/*Fondo Degradado circular con forma elíptica*/
+.radial-eliptico {
+    background: radial-gradient(rgba(128,0,128,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo Degradado circular con forma circular*/
+.radial-circulo {
+    background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,0,1) 100%);
+}
+
+/*Fondo Degradado circular con forma circular que se repite*/
+.radial-repetido {
+    background: repeating-radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 2.5%, rgba(255,255,0,1) 5%);
+}
+
+/*Fondo Degradado circular con forma circular con valor closest-side*/
+.radial-cs {
+    background: radial-gradient(circle closest-side at 35% 40%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+/*Fondo Degradado circular con forma circular con valor farthest-side*/
+.radial-fs {
+    background: radial-gradient(circle farthest-side at 35% 40%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+/*Fondo Degradado circular con forma circular con valor closest-corner*/
+.radial-cc {
+    background: radial-gradient(circle closest-corner at 35% 40%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+/*Fondo Degradado circular con forma circular con valor farthest-corner*/
+.radial-fc {
+    background: radial-gradient(circle farthest-corner at 35% 40%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+
+/*Fondo Degradado circular con forma circular con valor closest-side y distintos porcentajes*/
+.radial-cs1 {
+    background: radial-gradient(circle closest-side at 10% 15%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+.radial-cs2 {
+    background: radial-gradient(circle closest-side at 35% 40%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+.radial-cs3 {
+    background: radial-gradient(circle closest-side at 65% 80%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+.radial-cs4 {
+    background: radial-gradient(circle closest-side at 90% 85%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+/*DEGRADADO CÓNICO*/
+/*Degradado cónico con paradas*/
+.conico {
+    background: conic-gradient(rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+
+/*Degradado cónico con un ángulos para cada color*/
+.conico-grados {
+    background: conic-gradient(rgba(128,0,128,1) 5deg, rgba(255,0,0,1) 90deg, rgba(255,255,0,1) 270deg);
+}
+
+/*Degradado cónico con un ángulos para formar un gráfico de torta*/
+.conico-torta {
+    background: conic-gradient(rgba(128,0,128,1) 0deg, rgba(128,0,128,1) 90deg, rgba(255,0,0,1) 90deg, rgba(255,0,0,1) 180deg, rgba(255,255,0,1) 180deg, rgba(255,255,0,1) 270deg, rgb(0, 255, 0) 270deg);
+}
+
+/*Degradado cónico con un ángulo de inicio específico aplicando la palabra clave from*/
+.conico-from {
+    background: conic-gradient(from 33deg, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+/*Degradado cónico con centro específico*/
+.conico-centro {
+  background: conic-gradient(at 70% 15%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));
+}
+
+/*Degradado cónico con repetición*/
+
+.conico-repetido {
+  background-image: repeating-conic-gradient(rgba(128,0,128,1) 0%, rgba(255,0,0,1) 2.5%, rgba(255,255,0,1) 5%);
+}
+
+/*Degradado cónico con repetición y colores definidos (efecto candy)*/
+.conico-candy {
+    background-image: repeating-conic-gradient(rgba(128,0,128,1) 0deg 10deg, rgba(255,0,0,1) 10deg 20deg, rgba(255,255,0,1) 20deg 30deg);
+}
+
+/*COMPATIBILIDADES*/
+.lineal-rgba {
+    background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);
+}
+/*Color RGB*/
+.lineal-rgb {
+    background: linear-gradient(90deg, rgb(128,0,128) 0%, rgb(255,0,0) 35%, rgb(255,255,0) 100%)
+}
+
+/*Color Hexadecimal*/
+.lineal-hex {
+    background: linear-gradient(90deg, #800080 0%, #FF0000 35%, #FFFF00 100%)
+}
+
+/*Color por nombre*/
+.lineal-name {
+    background: linear-gradient(90deg, purple 0%, red 35%, yellow 100%)
+}
