@@ -4,288 +4,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fondos degradados en CSS</title>
+    <link rel="icon" type="image/jpg" href="./img/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <header>
-    <h1>DEGRADADOS EN CSS</h1>
+    <h1>FONDOS DEGRADADOS EN CSS</h1>
 </header>
 
 <body>
-    <section class="section"> <!-- colores -->
-        <p>Para hacer los degradados usaremos colores RGBA</p>
-    
-        <div class="container__color-area">
-            <div class="container__color borde-violeta">
-                <div class="caja__color violeta">
+    <main>
+        <section class="section"> <!-- colores -->
+            <p>Para hacer los degradados usaremos colores RGBA</p>
+
+            <div class="container__color-area">
+                <div class="container__color borde-violeta">
+                    <div class="caja__color violeta">
+                    </div>
+                    <div class="caja__color-texto">
+                        <p>Color 1: rgba(128,0,128,1)</p>
+                        <p>Parada 1: 0%</p>
+                    </div>
+                    <div class="caja__color-texto">
+                        <p>Mismo color que:</p>
+                        <p>purple</p>
+                        <p>#800080 </p>
+                        <p>rgb(128,0,128)</p>
+                        </p>
+                    </div>
                 </div>
-                <div class="caja__color-texto">
-                    <p>Color 1: rgba(128,0,128,1)</p>
-                    <p>Parada 1: 0%</p>                    
+
+                <div class="container__color borde-rojo">
+                    <div class="caja__color rojo">
+                    </div>
+                    <div class="caja__color-texto">
+                        <p>Color 2: rgba(255,0,0,1)</p>
+                        <p>Parada 2: 35%</p>
+                    </div>
+
+                    <div class="caja__color-texto">
+                        <p>Mismo color que:</p>
+                        <p>red</p>
+                        <p>#FF0000</p>
+                        <p>rgb(255,0,0,)</p>
+                    </div>
                 </div>
-                <div class="caja__color-texto">
-                    <p>Mismo color que:</p>
-                    <p>purple</p>
-                    <p>#800080 </p>
-                    <p>rgb(128,0,128)</p>
-                    </p>
+
+                <div class="container__color borde-amarillo">
+                    <div class="caja__color amarillo">
+                    </div>
+                    <div class="caja__color-texto">
+                        <p>Color 3: rgba(255,255,0,1)</p>
+                        <p>Parada 3: 100%</p>
+                    </div>
+                    <div class="caja__color-texto">
+                        <p>Mismo color que:</p>
+                        <p>yellow</p>
+                        <p>#FFFF00</p>
+                        <p>rgb(255, 255, 0)</p>
+                    </div>
                 </div>
             </div>
-        
-            <div class="container__color borde-rojo">
-                <div class="caja__color rojo">
-                </div>
-                <div class="caja__color-texto">
-                    <p>Color 2: rgba(255,0,0,1)</p>
-                    <p>Parada 2: 35%</p>
-                </div>
-        
-                <div class="caja__color-texto">
-                    <p>Mismo color que:</p>
-                    <p>red</p>
-                    <p>#FF0000</p>
-                    <p>rgb(255,0,0,)</p>
-                </div>
-            </div>
-        
-            <div class="container__color borde-amarillo">
-                <div class="caja__color amarillo">
-                </div>
-                <div class="caja__color-texto">
-                    <p>Color 3: rgba(255,255,0,1)</p>
-                    <p>Parada 3: 100%</p>
-                </div>
-                <div class="caja__color-texto">
-                    <p>Mismo color que:</p>
-                    <p>yellow</p>
-                    <p>#FFFF00</p>
-                    <p>rgb(255, 255, 0)</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section> <!-- degradados lineales -->
-        <h2>Degradados lineales</h2>
+        <section> <!-- degradados lineales -->
+            <h2>Degradados lineales</h2>
 
-        <h3>Cambiando la dirección del degradado</h3>
+            <h3>Cambiando la dirección del degradado</h3>
 
-        <p>1. Degradado lineal de izquierda a derecha con 3 colores</p>
-        <p class="p-blue">background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg lineal-izquierda"></div>
+            <p>1. Degradado lineal de izquierda a derecha con 3 colores</p>
+            <p class="p-blue">background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg lineal-izquierda"></div>
 
-        <p>2. Degradado lineal de derecha a izquierda con 3 colores</p>
-        <p class="p-blue">background: linear-gradient(270deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg lineal-derecha"></div>
+            <p>2. Degradado lineal de derecha a izquierda con 3 colores</p>
+            <p class="p-blue">background: linear-gradient(270deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg lineal-derecha"></div>
 
-        <p>3. Degradado lineal de arriba hacia abajo con 3 colores</p>
-        <p class="p-blue">background: linear-gradient(180deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg lineal-arriba"></div>
+            <p>3. Degradado lineal de arriba hacia abajo con 3 colores</p>
+            <p class="p-blue">background: linear-gradient(180deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg lineal-arriba"></div>
 
-        <p>4. Degradado lineal de abajo hacia arriba con 3 colores</p>
-        <p class="p-blue">background: linear-gradient(0deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1)
-            100%);</p>
-        <div class="cont__bg lineal-abajo"></div>
+            <p>4. Degradado lineal de abajo hacia arriba con 3 colores</p>
+            <p class="p-blue">background: linear-gradient(0deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1)
+                100%);</p>
+            <div class="cont__bg lineal-abajo"></div>
 
-        <h3>Degradados en diagonal</h3>
+            <h3>Degradados en diagonal</h3>
 
-        <p>1. Degradado lineal desde la esquina inferior izquierda ↗</p>
-        <p class="p-blue">background: linear-gradient(45deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg lineal-inf-izquierda"></div>
+            <p>1. Degradado lineal desde la esquina inferior izquierda ↗</p>
+            <p class="p-blue">background: linear-gradient(45deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg lineal-inf-izquierda"></div>
 
-        <p>2. Degradado lineal desde la esquina superior izquierda ↘</p>
-        <p class="p-blue">background: linear-gradient(135deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg lineal-sup-izquierda"></div>
+            <p>2. Degradado lineal desde la esquina superior izquierda ↘</p>
+            <p class="p-blue">background: linear-gradient(135deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg lineal-sup-izquierda"></div>
 
-        <p>3. Degradado lineal desde la esquina superior derecha ↙</p>
-        <p class="p-blue">background: linear-gradient(225deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg lineal-sup-derecha"></div>
+            <p>3. Degradado lineal desde la esquina superior derecha ↙</p>
+            <p class="p-blue">background: linear-gradient(225deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg lineal-sup-derecha"></div>
 
-        <p>4. Degradado lineal desde la esquina inferior derecha ↖</p>
-        <p class="p-blue">background: linear-gradient(315deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg lineal-inf-derecha"></div>
+            <p>4. Degradado lineal desde la esquina inferior derecha ↖</p>
+            <p class="p-blue">background: linear-gradient(315deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg lineal-inf-derecha"></div>
 
-        <p><strong>Nota: </strong>pueden jugar con los ángulos (grados) que deseen entre 0 y 360</p>
+            <p><strong>Nota: </strong>pueden jugar con los ángulos (grados) que deseen entre 0 y 360</p>
 
-        <h3>Repetición</h3>
+            <h3>Repetición</h3>
 
-        <p>Degradado lineal repetido con ángulo de 90</p>
-        <p><strong>Nota: </strong>se pueden cambiar los ángulos (grados) como en los ejemplos anteriores, pero hay que
-            disminuir los porcentajes de las paradas. La sumatoria del porcentaje debe ser menor a 100 para que se
-            repita. Y cuanto menor es ese porcentaje, más veces se va a repetir.</p>
-        <p>Ejemplo 1: porcentaje pequeño</p>
-        <p class="p-blue">background: repeating-linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 2.5%,
-            rgba(255,255,0,1) 5%);</p>
-        <div class="cont__bg lineal-repeticion1"></div>
-        <p>Ejemplo 2: porcentaje grande</p>
-        <p class="p-blue">background: repeating-linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 25%,
-            rgba(255,255,0,1) 50%);</p>
-        <div class="cont__bg lineal-repeticion2"></div>
-    </section>
+            <p>Degradado lineal repetido con ángulo de 90</p>
+            <p><strong>Nota: </strong>se pueden cambiar los ángulos (grados) como en los ejemplos anteriores, pero hay
+                que
+                disminuir los porcentajes de las paradas. La sumatoria del porcentaje debe ser menor a 100 para que se
+                repita. Y cuanto menor es ese porcentaje, más veces se va a repetir.</p>
+            <p>Ejemplo 1: porcentaje pequeño</p>
+            <p class="p-blue">background: repeating-linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 2.5%,
+                rgba(255,255,0,1) 5%);</p>
+            <div class="cont__bg lineal-repeticion1"></div>
+            <p>Ejemplo 2: porcentaje grande</p>
+            <p class="p-blue">background: repeating-linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 25%,
+                rgba(255,255,0,1) 50%);</p>
+            <div class="cont__bg lineal-repeticion2"></div>
+        </section>
 
-    <section> <!-- degradados radiales -->
-        <h2>Degradados radiales</h2>
+        <section> <!-- degradados radiales -->
+            <h2>Degradados radiales</h2>
 
-        <h3>Básicos</h3>
+            <h3>Básicos</h3>
 
-        <p>1. Degradado radial elíptico (por defecto)</p>
-        <p class="p-blue">background: radial-gradient(rgba(128,0,128,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,0,1)
-            100%);</p>
-        <div class="cont__bg radial-eliptico"></div>
+            <p>1. Degradado radial elíptico (por defecto)</p>
+            <p class="p-blue">background: radial-gradient(rgba(128,0,128,1) 0%, rgba(255,0,0,1) 50%, rgba(255,255,0,1)
+                100%);</p>
+            <div class="cont__bg radial-eliptico"></div>
 
-        <p>2. Degradado radial circular</p>
-        <p class="p-blue">background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 50%,
-            rgba(255,255,0,1) 100%);</p>
-        <div class="cont__bg radial-circulo"></div>
+            <p>2. Degradado radial circular</p>
+            <p class="p-blue">background: radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 50%,
+                rgba(255,255,0,1) 100%);</p>
+            <div class="cont__bg radial-circulo"></div>
 
-        <p>3. Degradado radial circular repetido</p>
-        <p class="p-blue">background: repeating-radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 2.5%,
-            rgba(255,255,0,1) 5%);</p>
-        <div class="cont__bg radial-repetido"></div>
+            <p>3. Degradado radial circular repetido</p>
+            <p class="p-blue">background: repeating-radial-gradient(circle, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 2.5%,
+                rgba(255,255,0,1) 5%);</p>
+            <div class="cont__bg radial-repetido"></div>
 
-        <h3>Cambiando el tamaño</h3>
+            <h3>Cambiando el tamaño</h3>
 
-        <p>Size Keywords: parámetros que definen el tamaño del gradiente</p>
+            <p>Size Keywords: parámetros que definen el tamaño del gradiente</p>
 
-        <p>1. Degradado radial circular con valor closest-side</p>
-        <p class="p-blue">background: radial-gradient(circle closest-side at 35% 40%, rgba(128,0,128,1),
-            rgba(255,0,0,1), rgba(255,255,0,1));</p>
-        <div class="cont__bg radial-cs"></div>
-
-        <p>2. Degradado radial circular con valor farthest-side</p>
-        <p class="p-blue">background: radial-gradient(circle farthest-side at 35% 40%, rgba(128,0,128,1),
-            rgba(255,0,0,1), rgba(255,255,0,1));</p>
-        <div class="cont__bg radial-fs"></div>
-
-        <p>3. Degradado radial circular con valor closest-corner</p>
-        <p class="p-blue">background: radial-gradient(circle closest-corner at 35% 40%, rgba(128,0,128,1),
-            rgba(255,0,0,1), rgba(255,255,0,1));</p>
-        <div class="cont__bg radial-cc"></div>
-
-        <p>4. Degradado radial circular con valor farthest-corner (por defecto)</p>
-        <p class="p-blue">background: radial-gradient(circle farthest-corner at 35% 40%, rgba(128,0,128,1),
-            rgba(255,0,0,1), rgba(255,255,0,1));</p>
-        <div class="cont__bg radial-fc"></div>
-
-        <p><strong>Nota: </strong>se puede jugar con los porcentajes para ir cambiando el tamaño y lugar. Ejemplos con
-            el mismo valor (closest-side) y distintos porcentajes:</p>
-
-        <div class="container__ejemplo">
-            <div class="ejemplo">
-            <p>Ejemplo 1:</p>
-            <p class="p-blue">background: radial-gradient(circle closest-side at 10% 15%, rgba(128,0,128,1),
-                rgba(255,0,0,1), rgba(255,255,0,1));</p>
-            <div class="cont__bg-ejemplo radial-cs1"></div>
-        </div>
-
-        <div class="ejemplo">
-            <p>Ejemplo 2:</p>
+            <p>1. Degradado radial circular con valor closest-side</p>
             <p class="p-blue">background: radial-gradient(circle closest-side at 35% 40%, rgba(128,0,128,1),
                 rgba(255,0,0,1), rgba(255,255,0,1));</p>
-            <div class="cont__bg-ejemplo radial-cs2"></div>
-        </div>
+            <div class="cont__bg radial-cs"></div>
 
-        <div class="ejemplo">
-            <p>Ejemplo 3:</p>
-            <p class="p-blue">background: radial-gradient(circle closest-side at 65% 80%, rgba(128,0,128,1),
+            <p>2. Degradado radial circular con valor farthest-side</p>
+            <p class="p-blue">background: radial-gradient(circle farthest-side at 35% 40%, rgba(128,0,128,1),
                 rgba(255,0,0,1), rgba(255,255,0,1));</p>
-            <div class="cont__bg-ejemplo radial-cs3"></div>
-        </div>
+            <div class="cont__bg radial-fs"></div>
 
-        <div class="ejemplo">
-            <p>Ejemplo 4:</p>
-            <p class="p-blue">background: radial-gradient(circle closest-side at 90% 85%, rgba(128,0,128,1),
+            <p>3. Degradado radial circular con valor closest-corner</p>
+            <p class="p-blue">background: radial-gradient(circle closest-corner at 35% 40%, rgba(128,0,128,1),
                 rgba(255,0,0,1), rgba(255,255,0,1));</p>
-            <div class="cont__bg-ejemplo radial-cs4"></div>
-        </div>
+            <div class="cont__bg radial-cc"></div>
 
-        </div>
-    </section>
+            <p>4. Degradado radial circular con valor farthest-corner (por defecto)</p>
+            <p class="p-blue">background: radial-gradient(circle farthest-corner at 35% 40%, rgba(128,0,128,1),
+                rgba(255,0,0,1), rgba(255,255,0,1));</p>
+            <div class="cont__bg radial-fc"></div>
 
-    <section> <!-- degradados cónicos -->
-        <h2>Degradados cónicos</h2>
+            <p><strong>Nota: </strong>se puede jugar con los porcentajes para ir cambiando el tamaño y lugar. Ejemplos
+                con
+                el mismo valor (closest-side) y distintos porcentajes:</p>
 
-        <h3>Básicos</h3>
+            <div class="container__ejemplo">
+                <div class="ejemplo">
+                    <p>Ejemplo 1:</p>
+                    <p class="p-blue">background: radial-gradient(circle closest-side at 10% 15%, rgba(128,0,128,1),
+                        rgba(255,0,0,1), rgba(255,255,0,1));</p>
+                    <div class="cont__bg-ejemplo radial-cs1"></div>
+                </div>
 
-        <p>1. Degradado cónico de tres colores</p>
-        <p class="p-blue">background: conic-gradient(rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));</p>
-        <div class="cont__bg conico"></div>
+                <div class="ejemplo">
+                    <p>Ejemplo 2:</p>
+                    <p class="p-blue">background: radial-gradient(circle closest-side at 35% 40%, rgba(128,0,128,1),
+                        rgba(255,0,0,1), rgba(255,255,0,1));</p>
+                    <div class="cont__bg-ejemplo radial-cs2"></div>
+                </div>
 
-        <p>2. Degradado cónico de tres colores con ángulos (grados) para cada color</p>
-        <p class="p-blue">background: conic-gradient(rgba(128,0,128,1) 45deg, rgba(255,0,0,1) 90deg, rgba(255,255,0,1) 270deg);</p>
-        <div class="cont__bg conico-grados"></div>
-        
-        <p>3. Degradado cónico con un ángulo de inicio específico aplicando la palabra clave from</p>
-        <p class="p-blue">background: conic-gradient(from 33deg, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));</p>
-        <div class="cont__bg conico-from"></div>
+                <div class="ejemplo">
+                    <p>Ejemplo 3:</p>
+                    <p class="p-blue">background: radial-gradient(circle closest-side at 65% 80%, rgba(128,0,128,1),
+                        rgba(255,0,0,1), rgba(255,255,0,1));</p>
+                    <div class="cont__bg-ejemplo radial-cs3"></div>
+                </div>
 
-        <p>4. Degradado cónico con centro específico aplicando la palabra clave at</p>
-        <p class="p-blue">background: conic-gradient(at 70% 15%, rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));</p>
-        <div class="cont__bg conico-centro"></div>
+                <div class="ejemplo">
+                    <p>Ejemplo 4:</p>
+                    <p class="p-blue">background: radial-gradient(circle closest-side at 90% 85%, rgba(128,0,128,1),
+                        rgba(255,0,0,1), rgba(255,255,0,1));</p>
+                    <div class="cont__bg-ejemplo radial-cs4"></div>
+                </div>
 
-        <h3>Jugando para dar distintos efectos</h3>
-
-    <div class="container__ejemplo">
-        <div class="ejemplo">        
-            <p>5. Degradado cónico con repetición</p>
-            <p class="p-blue">background-image: repeating-conic-gradient(rgba(128,0,128,1) 0%, rgba(255,0,0,1) 5%, rgba(255,255,0,1) 10%);</p>
-            <div class="cont__bg-conico conico-repetido"></div>
-        </div>
-        <div class="ejemplo">
-            <p>6. Degradado cónico con repetición y colores definidos (efecto candy)</p>
-            <p class="p-blue">background-image: repeating-conic-gradient(rgba(128,0,128,1) 0deg 10deg, rgba(255,0,0,1) 10deg 20deg, rgba(255,255,0,1) 20deg 30deg);</p>
-            <div class="cont__bg-conico conico-candy"></div>
-        </div>
-
-        <div class="ejemplo">        
-            <p>7. Degradado cónico con ángulos para hacer un grafico de torta (pie-chart). Es necesario aplicar border-radius: 50% para hacer el círculo</p>
-            <p class="p-blue">background: conic-gradient(rgba(128,0,128,1) 0deg, rgba(128,0,128,1) 90deg, rgba(255,0,0,1) 90deg, rgba(255,0,0,1) 180deg, rgba(255,255,0,1) 180deg, rgba(255,255,0,1) 270deg, rgb(0, 255, 0) 270deg);</p>
-            <div class="cont__bg-conico conico-torta"></div>   
-        </div>
-    </section>
-
-    <section> <!-- compatibilidades -->
-        <h2>Equibalencias y compatibilidades</h2>
-
-        <h3>Mismo efecto distinto formato de color</h3>
-
-        <div class="container__ejemplo">
-            <div class="ejemplo">
-                <p>1. Color RGBA</p>
-                <p class="p-blue">background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%, rgba(255,255,0,1) 100%);</p>
-                <div class="cont__bg-ejemplo lineal-rgba"></div>
             </div>
+        </section>
 
-            <div class="ejemplo">
-                <p>1. Color RGB</p>
-                <p class="p-blue">background: linear-gradient(90deg, rgb(128,0,128) 0%, rgb(255,0,0) 35%, rgb(255,255,0) 100%);</p>
-                <div class="cont__bg-ejemplo lineal-rgb"></div>
+        <section> <!-- degradados cónicos -->
+            <h2>Degradados cónicos</h2>
+
+            <h3>Básicos</h3>
+
+            <p>1. Degradado cónico de tres colores</p>
+            <p class="p-blue">background: conic-gradient(rgba(128,0,128,1), rgba(255,0,0,1), rgba(255,255,0,1));</p>
+            <div class="cont__bg conico"></div>
+
+            <p>2. Degradado cónico de tres colores con ángulos (grados) para cada color</p>
+            <p class="p-blue">background: conic-gradient(rgba(128,0,128,1) 45deg, rgba(255,0,0,1) 90deg,
+                rgba(255,255,0,1)
+                270deg);</p>
+            <div class="cont__bg conico-grados"></div>
+
+            <p>3. Degradado cónico con un ángulo de inicio específico aplicando la palabra clave from</p>
+            <p class="p-blue">background: conic-gradient(from 33deg, rgba(128,0,128,1), rgba(255,0,0,1),
+                rgba(255,255,0,1));
+            </p>
+            <div class="cont__bg conico-from"></div>
+
+            <p>4. Degradado cónico con centro específico aplicando la palabra clave at</p>
+            <p class="p-blue">background: conic-gradient(at 70% 15%, rgba(128,0,128,1), rgba(255,0,0,1),
+                rgba(255,255,0,1));
+            </p>
+            <div class="cont__bg conico-centro"></div>
+
+            <h3>Jugando para dar distintos efectos</h3>
+
+            <div class="container__ejemplo">
+                <div class="ejemplo">
+                    <p>5. Degradado cónico con repetición</p>
+                    <p class="p-blue">background-image: repeating-conic-gradient(rgba(128,0,128,1) 0%, rgba(255,0,0,1)
+                        5%,
+                        rgba(255,255,0,1) 10%);</p>
+                    <div class="cont__bg-conico conico-repetido"></div>
+                </div>
+                <div class="ejemplo">
+                    <p>6. Degradado cónico con repetición y colores definidos (efecto candy)</p>
+                    <p class="p-blue">background-image: repeating-conic-gradient(rgba(128,0,128,1) 0deg 10deg,
+                        rgba(255,0,0,1) 10deg 20deg, rgba(255,255,0,1) 20deg 30deg);</p>
+                    <div class="cont__bg-conico conico-candy"></div>
+                </div>
+
+                <div class="ejemplo">
+                    <p>7. Degradado cónico con ángulos para hacer un grafico de torta (pie-chart). Es necesario aplicar
+                        border-radius: 50% para hacer el círculo</p>
+                    <p class="p-blue">background: conic-gradient(rgba(128,0,128,1) 0deg, rgba(128,0,128,1) 90deg,
+                        rgba(255,0,0,1) 90deg, rgba(255,0,0,1) 180deg, rgba(255,255,0,1) 180deg, rgba(255,255,0,1)
+                        270deg,
+                        rgb(0, 255, 0) 270deg);</p>
+                    <div class="cont__bg-conico conico-torta"></div>
+                </div>
+        </section>
+
+        <section> <!-- compatibilidades -->
+            <h2>Equibalencias y compatibilidades</h2>
+
+            <h3>Mismo efecto distinto formato de color</h3>
+
+            <div class="container__ejemplo">
+                <div class="ejemplo">
+                    <p>1. Color RGBA</p>
+                    <p class="p-blue">background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(255,0,0,1) 35%,
+                        rgba(255,255,0,1) 100%);</p>
+                    <div class="cont__bg-ejemplo lineal-rgba"></div>
+                </div>
+
+                <div class="ejemplo">
+                    <p>1. Color RGB</p>
+                    <p class="p-blue">background: linear-gradient(90deg, rgb(128,0,128) 0%, rgb(255,0,0) 35%,
+                        rgb(255,255,0)
+                        100%);</p>
+                    <div class="cont__bg-ejemplo lineal-rgb"></div>
+                </div>
+
+                <div class="ejemplo">
+                    <p>1. Color Hexadecimal</p>
+                    <p class="p-blue">background: linear-gradient(90deg, #800080 0%, #FF0000 35%, #FFFF00 100%);</p>
+                    <div class="cont__bg-ejemplo lineal-hex"></div>
+                </div>
+
+                <div class="ejemplo">
+                    <p>1. Color por nombre</p>
+                    <p class="p-blue">background: linear-gradient(90deg, purple 0%, red 35%, yellow 100%);</p>
+                    <div class="cont__bg-ejemplo lineal-name"></div>
+                </div>
             </div>
-
-            <div class="ejemplo">
-                <p>1. Color Hexadecimal</p>
-                <p class="p-blue">background: linear-gradient(90deg, #800080 0%, #FF0000 35%, #FFFF00 100%);</p>
-                <div class="cont__bg-ejemplo lineal-hex"></div>
-            </div>
-
-            <div class="ejemplo">
-                <p>1. Color por nombre</p>
-                <p class="p-blue">background: linear-gradient(90deg, purple 0%, red 35%, yellow 100%);</p>
-                <div class="cont__bg-ejemplo lineal-name"></div>
-            </div>
-        </div>
-    </section>
-
-
-
+        </section>
+    </main>
+    <footer>
+        <p>© Vanina Denegri | 2024 </p>
+    </footer>
 </body>
 
 </html>
