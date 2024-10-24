@@ -17,6 +17,19 @@ Es un proyecto personal que me pareció pertinente compartir.
 La página irá creciendo a medida que investigue un poco más sibre el tema. 
 </p>
 
+<h2>Pendientes :clipboard:</h2>
+<p>
+ :small_orange_diamond: Agregar fondo de color a todos los divs con degradado para los navegadores que no soportan degradado.
+<br>
+ :small_orange_diamond: Agregar otros métodos con palabras claves como top, right, bottom y left para direccionar el degradado.
+<br>
+ :small_orange_diamond: Agregar prefijos para compatibilizar con distintos navegadores (por ejemplo -webkit).
+<br>
+ :small_orange_diamond: Agregar un indice al principio para mejorar la navegabilidad.
+<br>
+ :small_orange_diamond: Agregar un botón para volver arriba y mejorar la navegabilidad.
+</p>
+
 <h2>Acceso al proyecto :link:</h2>
 <p>
 <br>
@@ -39,7 +52,7 @@ Esta página fue realizada por Vanina Denegri.
 Herramientas web utilizadas en este README:
 <br>
 <br>
-<a href="https://shields.io/"><img src="https://img.shields.io/badge/Shields%20Badges-000000?style=flat-square&logo=shieldsdotio&logoColor=FFFFFF&link=https%3A%2F%2Fshields.io%2Fbadges"></a> <a href="https://gist.github.com/rxaviers/7360908"><img src="https://img.shields.io/badge/Emojis%20para%20README.md-F28705?style=flat-square&link=https%3A%2F%2Fgist.github.com%2Frxaviers%2F7360908"></a> <a href=""><img src="https://img.shields.io/badge/Simple_Icons-%23000000?style=flat-square&logo=simpleicons&logoColor=%23ffffff"></a>
+<a href="https://shields.io/"><img src="https://img.shields.io/badge/Shields%20Badges-000000?style=flat-square&logo=shieldsdotio&logoColor=FFFFFF&link=https%3A%2F%2Fshields.io%2Fbadges"></a> <a href="https://gist.github.com/rxaviers/7360908"><img src="https://img.shields.io/badge/Emojis%20para%20README.md-F28705?style=flat-square&link=https%3A%2F%2Fgist.github.com%2Frxaviers%2F7360908"></a> <a href="https://simpleicons.org/?q=simpleicom"><img src="https://img.shields.io/badge/Simple_Icons-%23000000?style=flat-square&logo=simpleicons&logoColor=%23ffffff"></a>
 
 </p>
 
